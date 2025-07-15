@@ -9,7 +9,7 @@ while True:
     save = input("Do you want to save this password?(y/n): ")
     if save.lower() == "y":
         with open("passwords.txt","a") as file:
-            file.write(password)
+            file.write(f"\n{password} ")
 
         break
     elif save.lower() == "n":
